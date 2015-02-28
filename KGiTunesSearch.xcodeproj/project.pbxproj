@@ -14,6 +14,8 @@
 		53D7C92B1AA1B8A300345B5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D7C92A1AA1B8A300345B5A /* Images.xcassets */; };
 		53D7C92E1AA1B8A300345B5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D7C92C1AA1B8A300345B5A /* LaunchScreen.xib */; };
 		53D7C93A1AA1B8A300345B5A /* KGiTunesSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C9391AA1B8A300345B5A /* KGiTunesSearchTests.m */; };
+		53D7C9451AA1C0CD00345B5A /* KGiTunesSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C9441AA1C0CD00345B5A /* KGiTunesSearch.m */; };
+		53D7C94F1AA1CB1B00345B5A /* KGiTunesSearchParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C94E1AA1CB1B00345B5A /* KGiTunesSearchParam.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		53D7C9331AA1B8A300345B5A /* KGiTunesSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KGiTunesSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D7C9381AA1B8A300345B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53D7C9391AA1B8A300345B5A /* KGiTunesSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KGiTunesSearchTests.m; sourceTree = "<group>"; };
+		53D7C9431AA1C0CD00345B5A /* KGiTunesSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGiTunesSearch.h; path = Classes/KGiTunesSearch.h; sourceTree = "<group>"; };
+		53D7C9441AA1C0CD00345B5A /* KGiTunesSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGiTunesSearch.m; path = Classes/KGiTunesSearch.m; sourceTree = "<group>"; };
+		53D7C94D1AA1CB1B00345B5A /* KGiTunesSearchParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGiTunesSearchParam.h; path = Classes/KGiTunesSearchParam.h; sourceTree = "<group>"; };
+		53D7C94E1AA1CB1B00345B5A /* KGiTunesSearchParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGiTunesSearchParam.m; path = Classes/KGiTunesSearchParam.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		53D7C91C1AA1B8A300345B5A /* KGiTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				53D7C94B1AA1CAF600345B5A /* Params */,
 				53D7C9211AA1B8A300345B5A /* AppDelegate.h */,
 				53D7C9221AA1B8A300345B5A /* AppDelegate.m */,
 				53D7C9241AA1B8A300345B5A /* ViewController.h */,
@@ -89,6 +96,8 @@
 				53D7C92A1AA1B8A300345B5A /* Images.xcassets */,
 				53D7C92C1AA1B8A300345B5A /* LaunchScreen.xib */,
 				53D7C91D1AA1B8A300345B5A /* Supporting Files */,
+				53D7C9431AA1C0CD00345B5A /* KGiTunesSearch.h */,
+				53D7C9441AA1C0CD00345B5A /* KGiTunesSearch.m */,
 			);
 			path = KGiTunesSearch;
 			sourceTree = "<group>";
@@ -117,6 +126,23 @@
 				53D7C9381AA1B8A300345B5A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53D7C94B1AA1CAF600345B5A /* Params */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C94C1AA1CAFE00345B5A /* Entity */,
+			);
+			name = Params;
+			sourceTree = "<group>";
+		};
+		53D7C94C1AA1CAFE00345B5A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C94D1AA1CB1B00345B5A /* KGiTunesSearchParam.h */,
+				53D7C94E1AA1CB1B00345B5A /* KGiTunesSearchParam.m */,
+			);
+			name = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +247,9 @@
 			files = (
 				53D7C9261AA1B8A300345B5A /* ViewController.m in Sources */,
 				53D7C9231AA1B8A300345B5A /* AppDelegate.m in Sources */,
+				53D7C94F1AA1CB1B00345B5A /* KGiTunesSearchParam.m in Sources */,
 				53D7C9201AA1B8A300345B5A /* main.m in Sources */,
+				53D7C9451AA1C0CD00345B5A /* KGiTunesSearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

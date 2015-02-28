@@ -1,0 +1,7 @@
+Pods/
+Podfile.lock
+*.xcworkspace
+!default.xcworkspace
+.ruby-version
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj

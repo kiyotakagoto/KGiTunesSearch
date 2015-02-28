@@ -10,6 +10,25 @@
 
 @interface KGiTunesSearchItem : NSObject
 @property (nonatomic, strong) NSString *kind;
+@property (nonatomic, strong) NSString *wrapperType;
+@property (nonatomic)         NSInteger artistId;
+@property (nonatomic)         NSInteger collectionId;
+@property (nonatomic)         NSInteger trackId;
+@property (nonatomic, strong) NSString *collectionCensoredName;
+@property (nonatomic, strong) NSString *trackCensoredName;
+@property (nonatomic, strong) NSURL *artistViewUrl;
+@property (nonatomic)         double collectionPrice;
+@property (nonatomic)         double trackPrice;
+@property (nonatomic, strong) NSString *collectionExplicitness;
+@property (nonatomic, strong) NSString *trackExplicitness;
+@property (nonatomic)         NSInteger discCount;
+@property (nonatomic)         NSInteger discNumber;
+@property (nonatomic)         NSInteger trackCount;
+@property (nonatomic)         NSInteger trackNumber;
+@property (nonatomic)         NSInteger trackTimeMillis;
+@property (nonatomic, strong) NSString *country;
+@property (nonatomic, strong) NSString *currency;
+@property (nonatomic, strong) NSString *primaryGenreName;
 @property (nonatomic, strong) NSString *artistName;
 @property (nonatomic, strong) NSString *trackName;
 @property (nonatomic, strong) NSString *collectionName;

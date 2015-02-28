@@ -16,6 +16,7 @@
 		53D7C93A1AA1B8A300345B5A /* KGiTunesSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C9391AA1B8A300345B5A /* KGiTunesSearchTests.m */; };
 		53D7C9451AA1C0CD00345B5A /* KGiTunesSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C9441AA1C0CD00345B5A /* KGiTunesSearch.m */; };
 		53D7C94F1AA1CB1B00345B5A /* KGiTunesSearchParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C94E1AA1CB1B00345B5A /* KGiTunesSearchParam.m */; };
+		53D7C9541AA1CE9900345B5A /* KGiTunesSearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C9531AA1CE9900345B5A /* KGiTunesSearchItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		53D7C9441AA1C0CD00345B5A /* KGiTunesSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGiTunesSearch.m; path = Classes/KGiTunesSearch.m; sourceTree = "<group>"; };
 		53D7C94D1AA1CB1B00345B5A /* KGiTunesSearchParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGiTunesSearchParam.h; path = Classes/KGiTunesSearchParam.h; sourceTree = "<group>"; };
 		53D7C94E1AA1CB1B00345B5A /* KGiTunesSearchParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGiTunesSearchParam.m; path = Classes/KGiTunesSearchParam.m; sourceTree = "<group>"; };
+		53D7C9521AA1CE9900345B5A /* KGiTunesSearchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGiTunesSearchItem.h; path = Classes/KGiTunesSearchItem.h; sourceTree = "<group>"; };
+		53D7C9531AA1CE9900345B5A /* KGiTunesSearchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGiTunesSearchItem.m; path = Classes/KGiTunesSearchItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 		53D7C91C1AA1B8A300345B5A /* KGiTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				53D7C9501AA1CE7F00345B5A /* Item */,
 				53D7C94B1AA1CAF600345B5A /* Params */,
 				53D7C9211AA1B8A300345B5A /* AppDelegate.h */,
 				53D7C9221AA1B8A300345B5A /* AppDelegate.m */,
@@ -141,6 +145,23 @@
 			children = (
 				53D7C94D1AA1CB1B00345B5A /* KGiTunesSearchParam.h */,
 				53D7C94E1AA1CB1B00345B5A /* KGiTunesSearchParam.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		53D7C9501AA1CE7F00345B5A /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C9511AA1CE8400345B5A /* Entity */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
+		53D7C9511AA1CE8400345B5A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C9521AA1CE9900345B5A /* KGiTunesSearchItem.h */,
+				53D7C9531AA1CE9900345B5A /* KGiTunesSearchItem.m */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -249,6 +270,7 @@
 				53D7C9231AA1B8A300345B5A /* AppDelegate.m in Sources */,
 				53D7C94F1AA1CB1B00345B5A /* KGiTunesSearchParam.m in Sources */,
 				53D7C9201AA1B8A300345B5A /* main.m in Sources */,
+				53D7C9541AA1CE9900345B5A /* KGiTunesSearchItem.m in Sources */,
 				53D7C9451AA1C0CD00345B5A /* KGiTunesSearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

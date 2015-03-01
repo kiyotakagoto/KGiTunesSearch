@@ -57,7 +57,11 @@
         NSArray *results = json[@"results"];
         NSMutableArray *entities = [@[] mutableCopy];
         for ( NSDictionary *dict in results ) {
-            [entities addObject:[[KGiTunesSearchItem alloc] initWithDict:dict]];
+            KGiTunesSearchItem *item = [[KGiTunesSearchItem alloc] initWithDict:dict];
+            if ( self.phgAffiliateId ) {
+                item.phgAffiliateId = self.phgAffiliateId;
+            }
+            [entities addObject:item];
         }
         
         dispatch_sync(dispatch_get_main_queue(), ^{

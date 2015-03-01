@@ -14,6 +14,8 @@ typedef void (^KGArrayResultsBlock)(NSArray *results, NSError *error);
 
 
 @interface KGiTunesSearch : NSObject
+@property (nonatomic, strong) NSString * phgAffiliateId;
+
 - (void) searchInBackgroundWithParam:(KGiTunesSearchParam *)param
                        queuePriority:(NSInteger)queuePriority
                                block:(KGArrayResultsBlock)block;

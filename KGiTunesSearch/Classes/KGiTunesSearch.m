@@ -8,7 +8,6 @@
 
 #import "KGiTunesSearch.h"
 #import "KGiTunesSearchRequestBuilder.h"
-#import "KGiTunesSearchItem.h"
 
 @implementation KGiTunesSearch
 - (void) searchInBackgroundWithParam:(KGiTunesSearchParam *)param

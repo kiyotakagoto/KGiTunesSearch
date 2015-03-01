@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KGiTunesSearch.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    KGiTunesSearchParam *param = [[KGiTunesSearchParam alloc] initWithTerm:@"Maroon5"];
+    [param setMedia:@"music"];
+    KGiTunesSearch *search = [[KGiTunesSearch alloc ] init];
+    [search searchInBackgroundWithParam:param
+                          queuePriority:DISPATCH_QUEUE_PRIORITY_HIGH block:
+     ^(NSArray *results, NSError *error) {
+         if ( error ) {
+             NSLog(@"### %@", error);
+             return;
+         }
+         
+         for ( KGiTunesSearchItem *item in results ) {
+             NSLog(@"--> %@", item.trackName );
+         }
+     }];
 }
 
 - (void)didReceiveMemoryWarning {

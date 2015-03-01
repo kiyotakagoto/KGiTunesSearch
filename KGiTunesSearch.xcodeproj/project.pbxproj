@@ -99,14 +99,10 @@
 		53D7C91C1AA1B8A300345B5A /* KGiTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				53D7C9621AA2EF7D00345B5A /* Demo */,
 				53D7C9551AA1E9E500345B5A /* RequestBuilder */,
 				53D7C9501AA1CE7F00345B5A /* Item */,
 				53D7C94B1AA1CAF600345B5A /* Params */,
-				53D7C9211AA1B8A300345B5A /* AppDelegate.h */,
-				53D7C9221AA1B8A300345B5A /* AppDelegate.m */,
-				53D7C9241AA1B8A300345B5A /* ViewController.h */,
-				53D7C9251AA1B8A300345B5A /* ViewController.m */,
-				53D7C9271AA1B8A300345B5A /* Main.storyboard */,
 				53D7C92A1AA1B8A300345B5A /* Images.xcassets */,
 				53D7C92C1AA1B8A300345B5A /* LaunchScreen.xib */,
 				53D7C91D1AA1B8A300345B5A /* Supporting Files */,
@@ -203,6 +199,18 @@
 				53D7C95C1AA1EBED00345B5A /* KGiTunesSearchQueryParamBuilder.m */,
 			);
 			name = QueryParamBuilder;
+			sourceTree = "<group>";
+		};
+		53D7C9621AA2EF7D00345B5A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C9211AA1B8A300345B5A /* AppDelegate.h */,
+				53D7C9221AA1B8A300345B5A /* AppDelegate.m */,
+				53D7C9241AA1B8A300345B5A /* ViewController.h */,
+				53D7C9251AA1B8A300345B5A /* ViewController.m */,
+				53D7C9271AA1B8A300345B5A /* Main.storyboard */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

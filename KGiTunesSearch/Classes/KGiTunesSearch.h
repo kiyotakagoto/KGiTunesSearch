@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "KGiTunesSearchParam.h"
+#import "KGiTunesSearchItem.h"
 
 typedef void (^KGArrayResultsBlock)(NSArray *results, NSError *error);
 

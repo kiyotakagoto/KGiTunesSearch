@@ -31,7 +31,12 @@
          }
          
          for ( KGiTunesSearchItem *item in results ) {
-             NSLog(@"--> %@", item.trackName );
+             NSLog(@"artist:%@, track:%@, trackView:%@, collectionView:%@",
+                   item.artistName,
+                   item.trackName,
+                   item.trackViewUrl.absoluteString,
+                   item.collectionViewUrl.absoluteString
+                   );
          }
      }];
 }

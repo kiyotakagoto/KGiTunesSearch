@@ -14,10 +14,10 @@ typedef void (^KGArrayResultsBlock)(NSArray *results, NSError *error);
 
 @interface KGiTunesSearch : NSObject
 - (void) searchInBackgroundWithParam:(KGiTunesSearchParam *)param
-                            priority:(NSInteger)priority
+                       queuePriority:(NSInteger)queuePriority
                                block:(KGArrayResultsBlock)block;
 - (void) searchInBackgroundWithParam:(KGiTunesSearchParam *)param
-                            priority:(NSInteger)priority
+                       queuePriority:(NSInteger)queuePriority
                          cachePolicy:(NSURLRequestCachePolicy)policy
                      timeoutInterval:(NSTimeInterval)interval
                                block:(KGArrayResultsBlock)block;

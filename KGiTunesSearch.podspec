@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "https://github.com/kiyotakagoto/KGiTunesSearch"
   s.license      = "MIT"
-  s.author             = { "KiyotakaGoto" => "spain.xavi.h@gmail.com" }
+  s.author             = "KiyotakaGoto"
   s.social_media_url   = "http://twitter.com/KiyotakaGoto"
   s.source       = { :git => "https://github.com/kiyotakagoto/KGiTunesSearch", :tag => "#{s.version}" }
   s.source_files  = "KGiTunesSearch/Classes", "Classes/**/*.{h,m}"
